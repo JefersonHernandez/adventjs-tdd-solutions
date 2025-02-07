@@ -6,11 +6,11 @@ describe("Santa Claus", () => {
     expect(typeof organizeInventory).toBe("function");
   });
 
-  it("should receive a array", () => {
+  it("should receive an array", () => {
     expect(() => organizeInventory()).toThrow();
   });
 
-  it("should receive a array of objects", () => {
+  it("should receive an array of objects", () => {
     expect(() => organizeInventory([1])).toThrow();
     expect(() => organizeInventory([undefined])).toThrow();
     expect(() => organizeInventory([""])).toThrow();
